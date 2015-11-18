@@ -7,8 +7,8 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.neighbors import *
 
 #Reading the train and test data
-train_data_df = pd.read_csv('trainingdata.txt',delimiter='\t',engine='python')
-test_data_df = pd.read_csv('testingdata.txt',header = None ,delimiter="\n")
+train_data_df = pd.read_csv('trainingdata.txt',delimiter='\t',header = None ,engine='python')
+test_data_df = pd.read_csv('testingdata.txt',header = None ,delimiter="\n",engine='python')
 
 #Naming the columns in train and test set
 train_data_df.columns = ["Domain","Text"]
